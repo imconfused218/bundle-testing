@@ -2,7 +2,7 @@ import axios from 'axios';
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import ScoreboardContainer from '../scoreboard';
-// import SEOExternal from '../config/seo-external';
+import SEOExternal from '../config/seo-external';
 
 
 export default function Scoreboard({ games, title }) {
@@ -21,7 +21,7 @@ export async function getServerSideProps() {
     `https://api-stage.sprtactn.co/web/v1/scoreboard/nfl?bookIds=15&date=20180620`
   ).then((response) => response.data.games);
 
-  // const title = SEOExternal.pages.home.metaTitle
+  const title = SEOExternal.pages.home.metaTitle
 
   return {
     props: {
