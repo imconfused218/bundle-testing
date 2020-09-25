@@ -1,0 +1,77 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+c-scoreboard {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.c-gameCard {
+  display: flex;
+  border: solid 1px #444;
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 300px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.c-leaguePicker {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.c-leaguePicker__list {
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  right: 0;
+  left: 0;
+}
+
+.c-leaguePicker__option {
+  padding: 5px;
+  border: solid 1px #888;
+}
+
+.c-leaguePicker__option:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.c-leaguePicker__select {
+  font-size: 16px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
